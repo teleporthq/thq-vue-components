@@ -9,12 +9,8 @@
   },
   "exports": {
     ".": {
-      "import": "./dist/thq-vue-components.js",
-      "require": "./dist/thq-vue-components.cjs.js"
-    },
-    "./cjs": {
-      "import": "./dist/thq-vue-components.cjs.js",
-      "require": "./dist/thq-vue-components.cjs.js"
+      "import": "./dist/thq-vue-components.mjs",
+      "require": "./dist/thq-vue-components.js"
     },
     "./umd": {
       "import": "./dist/thq-vue-components.umd.js",
