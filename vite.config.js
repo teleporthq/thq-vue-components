@@ -5,8 +5,7 @@ import vue from '@vitejs/plugin-vue2'
 export default defineConfig({
   plugins: [vue()],
   build: {
-    target: 'esnext',
-    polyfillDynamicImport: false,
+    emptyOutDir: false,
     outDir: 'dist',
     lib: {
       entry: resolve(__dirname, 'src/index.js'),
@@ -14,7 +13,7 @@ export default defineConfig({
       formats: ['es', 'cjs', 'umd'],
     },
     rollupOptions: {
-      external: ['vue', 'vue-loader'],
+      external: ['vue'],
       output: {
         globals: {
           vue: 'Vue',
