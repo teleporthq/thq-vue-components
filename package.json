@@ -9,7 +9,7 @@
   },
   "exports": {
     ".": {
-      "import": "./dist/thq-vue-components.mjs",
+      "import": "./dist/thq-vue-components.js",
       "require": "./dist/thq-vue-components.js"
     },
     "./umd": {
